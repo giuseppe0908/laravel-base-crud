@@ -1,0 +1,13 @@
+@mixin my-flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+@mixin my-flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@mixin my-flex-space-b{
+  display: flex;
+  justify-content:space-between;
+}

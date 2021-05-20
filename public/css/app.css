@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.speciale {
+  color: white;
+  margin-left: 5px;
+}
+
+#color-gray {
+  color: #555555;
+}
+
+.-by {
+  display: flex;
+  width: 100%;
+  margin-top: 7px;
+}
+
+.art-txt {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.art-txt p {
+  font-size: 10px;
+}
+
+.border-bt {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 20px;
+}
+
+#home {
+  padding-top: 50px;
+  background-color: #1C1C1C;
+}
+
+#home .rettangolo {
+  margin-left: 187px;
+  margin-top: -76px;
+  height: 50px;
+  width: 200px;
+  background-color: #0582F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#home .rettangolo p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#home .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#home .container .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100% /6 - 20px);
+  margin: 10px 10px;
+}
+
+#home .container .card .image {
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+}
+
+#home .container .card .image img {
+  width: 100%;
+}
+
+#home .container .card .text p {
+  margin-top: 10px;
+  color: white;
+}
+
+#home .container .load {
+  background-color: #0582F9;
+  height: 28px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+#home .container .load a {
+  color: white;
+}
+
+#home .banner-info {
+  background-color: #0582F9;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#home .banner-info .container ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 14px;
+  color: white;
+  font-size: 14px;
+}
+
+#home .banner-info .container ul li img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#home .banner-info .container ul li img#local {
+  width: 30px;
+}
+
+#single {
+  position: relative;
+}
+
+#single .img {
+  position: absolute;
+  top: -179px;
+  left: 351px;
+}
+
+#single .img #comic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  background-color: #00A9D9;
+  color: white;
+}
+
+#single .img #view {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: #00A9D9;
+  color: white;
+}
+
+#single .bg-blue {
+  background-color: #0582F9;
+  height: 50px;
+}
+
+#single .container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#single .container .text {
+  margin-top: 100px;
+}
+
+#single .container .text h2 {
+  color: #003f5e;
+}
+
+#single .container .text .prezzo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #55BA58;
+  height: 40px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#single .container .text .prezzo .price p {
+  padding: 0 20px;
+  font-size: 12px;
+  color: #BAFD9C;
+}
+
+#single .container .text .prezzo .check {
+  display: flex;
+  align-items: center;
+}
+
+#single .container .text .prezzo .check p#border {
+  border-right: 1px solid black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  color: #BAFD9C;
+}
+
+#single .container .text .prezzo .check p {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+#single .container .text .prezzo .check p p.speciale i {
+  padding-left: 15px;
+}
+
+#single .container .copertina {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+#single .container .copertina P {
+  padding-left: 63px;
+}
+
+#single .container .copertina img {
+  width: 200px;
+  height: 200px;
+}
+
+#single .specifiche {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  border-top: 1px solid #d6d6d6;
+  padding-bottom: 60px;
+}
+
+#single .specifiche .talent {
+  color: #003f5e;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#single .specifiche .talent h3 {
+  margin-top: 20px;
+}
+
+#single .specifiche .talent .art,
+#single .specifiche .talent .write,
+#single .specifiche .talent .series {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #d6d6d6;
+}
+
+#single .specifiche .talent .art p,
+#single .specifiche .talent .write p,
+#single .specifiche .talent .series p {
+  color: #00a9d9;
+}
+
+#single .specifiche .talent .write {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+#single .specifiche .talent .write .-by,
+#single .specifiche .talent .write .art-txt {
+  margin-bottom: 7px;
+}
+
+#single .specifiche .specs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #003f5e;
+  padding-left: 40px;
+}
+
+#single .specifiche .specs h3 {
+  margin-top: 20px;
+}
+
+#single .specifiche .specs .series {
+  display: flex;
+  border-top: 1px solid #d6d6d6;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#single .specifiche .specs .series .-by {
+  width: 31%;
+}
+
+#single .specifiche .specs .series .art-txt p#colorato {
+  color: #00a9d9;
+}
+
+#single .specifiche .specs .series .art-txt p {
+  font-size: 14px;
+}
+
+#single .links {
+  background-color: #F6F6F6;
+  border: 1px solid lightgrey;
+}
+
+#single .links .link {
+  display: flex;
+  flex-direction: row;
+  width: calc(100%/4);
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  height: 80px;
+  padding-top: 20px;
+  padding: 10px;
+}
+
+#single .links .link .title {
+  text-transform: uppercase;
+}
+
+#single .links .link .title p {
+  color: lightgrey;
+}
+
+#single .links .link .img-link img {
+  width: 40px;
+  height: 40px;
+  color: gray;
+}
+
