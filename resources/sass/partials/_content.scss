@@ -93,13 +93,17 @@
   position: relative;
   .img{
     position: absolute;
-    top: -179px;
-    left: 351px;
+    left: 285px;
+    top: 50px;
+
+    img{
+      height: 200px;
+    }
 
     #comic{
       position: absolute;
-      top: 0;
-      left: 0;
+      // top: 98px;
+      // left: 266px;
       font-size: 12px;
       background-color:$color_img ;
         color: white;
@@ -125,7 +129,7 @@
     // flex-direction: column;
     justify-content: space-between;
       .text{
-        margin-top: 100px;
+        margin-top: 240px;
         h2{
           color: #003f5e;
         }
@@ -169,7 +173,7 @@
         }
       }
       .copertina{
-        margin-top: 100px;
+        margin-top: 240px;
         margin-left: 40px;
         P{
           padding-left: 63px;

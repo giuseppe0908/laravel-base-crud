@@ -47,6 +47,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
+      // return view('/single',compact('comic'))->name('single');
       return view('single',compact('comic'));
     }
 

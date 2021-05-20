@@ -40,37 +40,6 @@
   </div>
     <section class="specifiche">
       <div class="container">
-        <div class="talent">
-          <h3>Talent</h3>
-          <div class="art">
-            <div class="-by">
-              <span>Art by:</span>
-            </div>
-
-            <div class="art-txt">
-              @foreach ($comic['artists'] as $value)
-                <p>{{$value}}</p>
-                @if (!$loop->last)
-                ,
-                @endif
-              @endforeach
-            </div>
-          </div>
-          <div class="write">
-            <div class="-by">
-              <span>Written by:</span>
-            </div>
-            <div class="art-txt">
-                @foreach ($comic['writers'] as $value)
-                  <p>{{$value}}</p>
-                  @if (!$loop->last)
-                  ,
-                  @endif
-                @endforeach
-            </div>
-
-          </div>
-        </div>
 
         <div class="specs">
           <h3>Specs</h3>
@@ -104,45 +73,7 @@
 
 
     </section>
-    <section class="links">
-      <div class="container">
-        <div class="link">
-          <div class="title">
-            <p>digital comics</p>
-          </div>
-          <div class="img-link">
-            <img src="/images/buy-comics-digital-comics.png" alt="">
-          </div>
-        </div>
-        <div class="link">
-          <div class="title">
-            <p>digital comics</p>
-          </div>
-          <div class="img-link">
-            <img src="/images/buy-comics-merchandise.png" alt="">
-          </div>
-        </div>
-        <div class="link">
-          <div class="title">
-            <p>digital comics</p>
-          </div>
-          <div class="img-link">
-            <img src="/images/buy-comics-subscriptions.png" alt="">
-          </div>
-        </div>
-        <div class="link">
-          <div class="title">
-            <p>digital comics</p>
-          </div>
-          <div class="img-link">
-            <img src="/images/buy-comics-shop-locator.png" alt="">
-          </div>
-        </div>
-      </div>
 
-
-
-    </section>
 
 
 

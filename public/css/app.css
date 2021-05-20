@@ -150,14 +150,16 @@ a {
 
 #single .img {
   position: absolute;
-  top: -179px;
-  left: 351px;
+  left: 285px;
+  top: 50px;
+}
+
+#single .img img {
+  height: 200px;
 }
 
 #single .img #comic {
   position: absolute;
-  top: 0;
-  left: 0;
   font-size: 12px;
   background-color: #00A9D9;
   color: white;
@@ -186,7 +188,7 @@ a {
 }
 
 #single .container .text {
-  margin-top: 100px;
+  margin-top: 240px;
 }
 
 #single .container .text h2 {
@@ -233,7 +235,7 @@ a {
 }
 
 #single .container .copertina {
-  margin-top: 100px;
+  margin-top: 240px;
   margin-left: 40px;
 }
 
