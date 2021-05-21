@@ -12,17 +12,24 @@
     <main id="home">
       <div class="container">
         @foreach ($comics as  $value)
-          <a href="{{route('comic.show',['comic'=>$value->id])}}">
           <div class="card">
+            <a href="{{route('comic.show',['comic'=>$value->id])}}">
               <div class="image">
                 <img src="{{$value['thumb']}}" alt="{{$value->title}}">
               </div>
             <div class="text">
               <p>{{$value['series']}}</p>
+              <a href="{{route('comic.edit',['comic'=>$value->id])}}">edit</a>
+              <form class="" action="{{route('comic.destroy',['comic'=>$value->id])}}" method="post">
+                @csrf
+                @method('DELETE')
+                <input type="submit" name="Delete" value="Delete" >
+              </form>
             </div>
           </div>
           </a>
         @endforeach
+        <a href="{{route('comic.create')}}">Crea</a>
       </div>
     </main>
     <footer>

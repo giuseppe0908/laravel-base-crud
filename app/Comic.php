@@ -11,5 +11,16 @@ class Comic extends Model
 *
 * @var string
 */
-protected $table = 'comics';
+// protected $table = 'comics';
+
+protected $fillable = [
+  'title',
+  'description',
+  'thumb',
+  'price',
+  'series',
+  'sale_date',
+  'type'
+];
+
 }
