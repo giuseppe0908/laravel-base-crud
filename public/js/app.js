@@ -19380,6 +19380,21 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var app = new Vue({
+  el: '#root',
+  data: {
+    id: null
+  },
+  methods: {
+    delete_comic: function delete_comic(id) {
+      this.id = id;
+    },
+    no_elimina: function no_elimina() {
+      this.id = null;
+    }
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

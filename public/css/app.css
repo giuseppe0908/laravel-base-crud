@@ -55,6 +55,7 @@ a {
 #home {
   padding-top: 50px;
   background-color: #1C1C1C;
+  height: 100vh;
 }
 
 #home .rettangolo {
@@ -81,6 +82,12 @@ a {
   justify-content: center;
 }
 
+#home .container a {
+  margin-top: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
 #home .container .card {
   display: flex;
   flex-direction: column;
@@ -104,44 +111,29 @@ a {
   color: white;
 }
 
-#home .container .load {
-  background-color: #0582F9;
-  height: 28px;
-  width: 150px;
+#home .container .card .text a.mg-top {
+  margin-top: 20px;
+  color: yellow;
+}
+
+#home .container .elimina {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  font-size: 12px;
+  flex-direction: column;
 }
 
-#home .container .load a {
-  color: white;
-}
-
-#home .banner-info {
-  background-color: #0582F9;
-  height: 100px;
+#home .container .elimina .si-no {
   display: flex;
-  align-items: center;
+  margin-top: 10px;
 }
 
-#home .banner-info .container ul li {
-  display: flex;
-  align-items: center;
-  margin: 0 14px;
-  color: white;
-  font-size: 14px;
+#home .container .elimina .si-no button {
+  margin: 0 20px;
 }
 
-#home .banner-info .container ul li img {
-  width: 40px;
-  margin-right: 10px;
-}
-
-#home .banner-info .container ul li img#local {
-  width: 30px;
+#home .container a#create {
+  border: 1px solid white;
+  padding: 10px;
+  background-color: #00A9D9;
 }
 
 #single {
@@ -163,6 +155,7 @@ a {
   font-size: 12px;
   background-color: #00A9D9;
   color: white;
+  text-transform: uppercase;
 }
 
 #single .img #view {

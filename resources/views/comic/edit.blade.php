@@ -5,6 +5,16 @@
     <title></title>
   </head>
   <body>
+    @if ($errors->any())
+      <div class="">
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+    
     <form class="" action="{{route('comic.update',['comic'=>$comic->id])}}" method="post">
       @csrf
       @method('PATCH')

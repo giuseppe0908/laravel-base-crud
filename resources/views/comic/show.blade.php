@@ -11,7 +11,7 @@
     </head>
     <main id="single">
   <div class="img">
-    <span id="comic">COMIC BOOK</span>
+    <span id="comic">{{$comic->type}}</span>
     <img src="{{$comic['thumb']}}" alt="ok">
     <span id="view">VIEW GALLERY</span>
 
