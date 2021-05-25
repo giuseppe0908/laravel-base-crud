@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-    <div id="root">
-      <head>
 
-      </head>
+      @extends('layout.app')
+      @section('main')
       <main id="home">
+        <div class="rettangolo">
+          <p>CURRENT SERIES</p>
+        </div>
         <div class="container">
           @foreach ($comics as  $value)
             <div class="card">
@@ -29,7 +23,7 @@
                     <form class="" action="{{route('comic.destroy',['comic'=>$value->id])}}" method="post" v-if="id!=null">
                       @csrf
                       @method('DELETE')
-                      <input type="submit" name="Delete" value="Si" >
+                      <input type="submit" name="Delete" value="Si " >
                     </form>
                     <button type="button" name="button"  @click= "no_elimina()" v-if="id!=null">NO</button>
                   </div>
@@ -40,16 +34,22 @@
             </div>
             </a>
           @endforeach
-          <a id="create" href="{{route('comic.create')}}">Crea un nuovo fumetto</a>
+          <a id="btn-create" href="{{route('comic.create')}}">Crea un nuovo fumetto</a>
+
+
         </div>
+        <section class="banner-info">
+          <div class="container">
+            <ul>
+              <li><img src="/images/buy-comics-digital-comics.png" alt="">DIGITAL COMICS </li>
+              <li><img src="/images/buy-comics-merchandise.png" alt="">DC MERCHANDISE </li>
+              <li><img src="/images/buy-comics-subscriptions.png" alt="">SUBSCRIPTION</li>
+              <li><img id="local" src="/images/buy-comics-shop-locator.png" alt="">COMIC SHOP LOCATOR </li>
+              <li><img src="/images/buy-dc-power-visa.svg" alt="">DC POWER VISA</li>
+            </ul>
+          </div>
+
+        </section>
       </main>
-      <footer>
 
-      </footer>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="/js/app.js" charset="utf-8"></script>
-  </body>
-</html>
+      @endsection

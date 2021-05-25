@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/app.css">
-  </head>
-  <body>
-    <head>
 
-    </head>
-    <main id="single">
+  @extends('layout.app')
+  @section('main')
+  <main id="single">
   <div class="img">
     <span id="comic">{{$comic->type}}</span>
     <img src="{{$comic['thumb']}}" alt="ok">
@@ -74,13 +66,5 @@
 
     </section>
 
-
-
-
-</main>
-    <footer>
-
-    </footer>
-
-  </body>
-</html>
+  </main>
+  @endsection

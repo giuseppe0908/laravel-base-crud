@@ -1,7 +1,6 @@
 #home{
   padding-top: 50px;
   background-color: #1C1C1C;
-  height: 100vh;
   .rettangolo{
     // position: absolute;
     // bottom: -20px;
@@ -61,6 +60,7 @@
     .elimina{
       display: flex;
       flex-direction: column;
+      width: 65px;
       .si-no{
         display: flex;
         margin-top: 10px;
@@ -69,23 +69,50 @@
         }
       }
     }
-    a#create{
+    a#btn-create{
       border: 1px solid white;
       padding: 10px;
-      background-color: $color_img;
+      height: 40px;
+      background-color: #0582F9;
+      margin-bottom: 40px;
+      text-align: center;
     }
   }
+  .banner-info{
+  background-color: #0582F9;
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+  .container{
+    ul li{
+      display: flex;
+      align-items: center;
+      margin: 0 14px;
+      color: white;
+      font-size: 14px;
+      img{
+        width: 40px;
+        margin-right: 10px;
+        &#local{
+          width: 30px;
+        }
+      }
+    }
+  }
+
+}
 }
 
 #single{
   position: relative;
   .img{
     position: absolute;
-    left: 285px;
-    top: 50px;
-    img{
-      height: 200px;
-    }
+    top: -179px;
+    left: 326px;
+    // img{
+    //   height: 200px;
+    // }
     #comic{
       position: absolute;
       // top: 98px;
@@ -116,7 +143,7 @@
     // flex-direction: column;
     justify-content: space-between;
       .text{
-        margin-top: 240px;
+        margin-top: 130px;
         h2{
           color: #003f5e;
         }
@@ -160,7 +187,7 @@
         }
       }
       .copertina{
-        margin-top: 240px;
+        margin-top: 130px;
         margin-left: 40px;
         P{
           padding-left: 63px;
@@ -270,5 +297,38 @@
       }
     }
   }
+}
 
+#create, #edit{
+
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+  h1{
+    text-align: center;
+    color: deepskyblue;
+    font-size: 50px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+
+    input{
+      margin: 12px;
+      height: 30px;
+      width: 600px;
+      &.invia{
+        width: 77px;
+        background: deepskyblue;
+        color: white;
+        border-radius: 22px;
+        height: 50px;
+        font-size: 20px;
+        border: 1px solid deepskyblue;
+
+      }
+    }
+  }
 }
